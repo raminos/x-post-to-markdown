@@ -30,3 +30,7 @@ And paste it wherever you need it
 
 [Source](https://twitter.com/FoundersPodcast/status/1695080986256531964)
 ```
+
+## Limitations
+
+The extension doesn't support retweets, threads and embedded videos.
