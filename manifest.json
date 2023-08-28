@@ -1,7 +1,7 @@
 {
-  "name": "Scrape X Post",
+  "name": "X Post to Markdown",
   "version": "0.0.1",
-  "description": "Quick script to scrape an x post",
+  "description": "Extension to copy an x post in markdown format",
   "manifest_version": 3,
   "author": "Ramin Azhdari",
   "background": {

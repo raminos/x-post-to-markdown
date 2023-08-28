@@ -1,10 +1,10 @@
-const clickHandler = (info, tab) => {
+const clickHandler = (_info, tab) => {
   chrome.tabs.sendMessage(tab.id, { func: "copyPostToClipboard" });
 };
 
 chrome.contextMenus.create({
-  id: "SCRAPE_X_POST_EXTENSION",
-  title: "Copy X Post as Markdown",
+  id: "X_POST_TO_MARKDOWN_EXTENSION",
+  title: "Copy as Markdown",
   contexts: ["page", "selection", "image", "link"],
 });
 
