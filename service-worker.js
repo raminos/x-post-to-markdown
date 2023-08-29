@@ -10,11 +10,14 @@ const toggleContextMenus = (url) => {
     return;
   }
 
-  chrome.contextMenus.create({
-    id: "X_POST_TO_MARKDOWN_EXTENSION",
-    title: "Copy as Markdown",
-    contexts: ["page", "selection", "image", "link"],
-  });
+  chrome.contextMenus.create(
+    {
+      id: "X_POST_TO_MARKDOWN_EXTENSION",
+      title: "Copy as Markdown",
+      contexts: ["page", "selection", "image", "link"],
+    },
+    () => chrome.runtime.lastError
+  );
 
   chrome.contextMenus.onClicked.addListener(clickHandler);
 };
