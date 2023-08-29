@@ -5,12 +5,12 @@
   "manifest_version": 3,
   "author": "Ramin Azhdari",
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "service-worker.js"
   },
   "content_scripts": [
     {
       "matches": ["https://x.com/*", "https://twitter.com/*"],
-      "js": ["contentScript.js"],
+      "js": ["content-script.js"],
       "run_at": "document_start"
     }
   ],
